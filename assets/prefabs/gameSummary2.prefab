@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "facts",
+    "_name": "gameSummary2",
     "_objFlags": 0,
     "_native": "",
     "data": {
@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "facts",
+    "_name": "gameSummary2",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": null,
@@ -39,7 +39,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -600,
+      "x": 0,
       "y": 0,
       "z": 0
     },
@@ -90,8 +90,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 1166.71,
-      "y": -65.817,
+      "x": 566.71,
+      "y": 30.683000000000007,
       "z": 0
     },
     "_lrot": {
@@ -260,8 +260,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 26.44600000000014,
-      "y": -20.441,
+      "x": -573.554,
+      "y": 76.059,
       "z": 0
     },
     "_lrot": {
@@ -301,7 +301,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 1100,
-      "height": 50.4
+      "height": 56.7
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -362,11 +362,11 @@
     "__prefab": {
       "__id__": 16
     },
-    "_lineHeight": 40,
+    "_lineHeight": 45,
     "_string": "",
     "_horizontalAlign": 2,
     "_verticalAlign": 0,
-    "_fontSize": 35,
+    "_fontSize": 41,
     "_maxWidth": 1100,
     "_fontFamily": "Arial",
     "_font": null,
@@ -412,8 +412,8 @@
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 1
+      "x": 0.5,
+      "y": 0.5
     },
     "_id": ""
   },
@@ -444,7 +444,7 @@
     "_isAbsRight": true,
     "_isAbsTop": true,
     "_isAbsBottom": true,
-    "_isAbsHorizontalCenter": true,
+    "_isAbsHorizontalCenter": false,
     "_isAbsVerticalCenter": true,
     "_originalWidth": 0,
     "_originalHeight": 0,

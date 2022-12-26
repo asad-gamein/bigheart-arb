@@ -624,16 +624,25 @@ export class Livelihood extends Component {
         });
 
         if (clothesTruckCount > 0) {
-            this.gameSummary.push(`شاحنة معبأة بالملابس ${clothesTruckCount}`);
-            this.gameSummary.push(`شاحنة معبأة بالملابس`);
+            let summaryText: string = "";
+            let truckType: string = "شاحنة معبأة بالملابس ";
+            summaryText = summaryText + `${truckType} \u200E${clothesTruckCount}`;
+            this.gameSummary.push(summaryText);
+            // this.gameSummary.push(`شاحنة معبأة بالملابس ${clothesTruckCount}`);
         }
         if (waterTruckCount > 0) {
-            this.gameSummary.push(`شاحنة معبأة بالماء ${waterTruckCount}`);
-            this.gameSummary.push(`شاحنة معبأة بالماء`);
+            let summaryText: string = "";
+            let truckType: string = "شاحنة معبأة بالماء ";
+            summaryText = summaryText + `${truckType} \u200E${waterTruckCount}`;
+            this.gameSummary.push(summaryText);
+            // this.gameSummary.push(`شاحنة معبأة بالماء ${waterTruckCount}`);
         }
         if (foodTruckCount > 0) {
-            this.gameSummary.push(`شاحنة معبأة بالطعام ${foodTruckCount}`);
-            this.gameSummary.push(`شاحنة معبأة بالطعام`);
+            let summaryText: string = "";
+            let truckType: string = "شاحنة معبأة بالطعام ";
+            summaryText = summaryText + `${truckType} \u200E${foodTruckCount}`;
+            this.gameSummary.push(summaryText);
+            // this.gameSummary.push(`شاحنة معبأة بالطعام ${foodTruckCount}`);
         }
 
         gameManager.getInstance().setGameSummary(this.gameSummary);

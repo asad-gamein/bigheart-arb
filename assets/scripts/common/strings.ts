@@ -106,10 +106,10 @@ export function getAccomplishments(pGameType: GAME_TYPE) {
 }
 
 export function getVoiceOvers(pGameType: GAME_TYPE) {
-    let introduction: any;
-    let tutorial: any;
-    let end: any;
-    let game_summary: any;
+    let introduction: string;
+    let tutorial: string;
+    let end: string;
+    let game_summary: string;
     switch (pGameType) {
         case GAME_TYPE.EDUCATION:
             introduction = `ﻥﺃ ﺪﻳﺮﺗ ﻲﺘﻟﺍ ﺔﻘﻳﺮﻄﻟﺍ ﺭﺎﺘﺨﻧ ﺎﻨﻋﺩ .ﻢﻴﻠﻌﺘﻟﺍ ﻉﺎﻄﻗ ﺭﺎﻴﺘﺧﺎﺑ ﺖﻤﻗ ﺪﻘﻟ

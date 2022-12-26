@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Prefab, Label, UITransform, Size, instantiate, tween, director, Vec3, AudioSource } from "cc";
+import { _decorator, Component, Node, Prefab, Label, UITransform, Size, instantiate, tween, director, Vec3, AudioSource, RichText } from "cc";
 const { ccclass, property } = _decorator;
 import { gameManager, GAME_TYPE } from "../common/managers/gameManager";
 import { ResourceUtils } from "../common/managers/ResourceUtils";
@@ -17,6 +17,13 @@ export class GameSummary extends Component {
     start() {
         this.gameSummary = gameManager.getInstance().getGameSummary();
         this.gameSummary.unshift(getVoiceOvers(gameManager.getInstance().getGameType()).game_summary.replace("xxx", String(gameManager.getInstance().getLastScore())) + "  من خلال التبرع بـ");
+
+        // let splittedTexts = getVoiceOvers(gameManager.getInstance().getGameType()).game_summary.split("xxx");
+        // let summaryText: string = "";
+        // let endText: string = "  من خلال التبرع بـ";
+        // summaryText = summaryText + `${splittedTexts[0]} \u200E${String(gameManager.getInstance().getLastScore())} ${splittedTexts[1]} ${endText}`;
+        // this.gameSummary.unshift(summaryText);
+
         this.addGameSummary();
         this.upateHeading();
 
@@ -58,7 +65,7 @@ export class GameSummary extends Component {
 
         this.gameSummary.forEach((element, index) => {
             this.accomplishment = instantiate(this.accomplishmentPrefab);
-            this.accomplishment.getChildByName("Text").getComponent(Label).string = element; //+".";
+            this.accomplishment.getChildByName("Text").getComponent(RichText).string = element; //+".";
             // this.accomplishment.position.y = this.accomplishment.getComponent(UITransform)?.contentSize.height!*1.2* index*-1;
             this.summary.addChild(this.accomplishment);
         });

@@ -2599,7 +2599,7 @@
     "_constraint": 0,
     "_constraintNum": 2,
     "_affectedByScale": false,
-    "_isAlign": false,
+    "_isAlign": true,
     "_id": "a79WWTpNVHJbE6MyBoCcdw"
   },
   {
