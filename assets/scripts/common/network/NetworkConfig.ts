@@ -30,7 +30,7 @@ export const REQUEST_TYPE = {
 export const BASE_ADDRESS= {
     LOCAL: "http://localhost:3000/",
     DEVELOPMENT : "http://localhost:3000/",
-    STAGING :  "https://big-heart-foundation.herokuapp.com/",
+    STAGING :  "https://bigheart-backend-717f96eb9159.herokuapp.com/",
     PRODUCTION :"http://b37a4c250714.ngrok.io/",
 }
 
